@@ -1,0 +1,72 @@
+iframe{
+    width: 50vw;
+    height: 90vh;
+}
+
+video{
+    width: 50vw;
+    height: 90vh;
+    background: lightgray;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+#manualCnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    gap:5vw;
+}
+
+#nextBtn{
+    width: 0; 
+    height: 0; 
+    border-top: 3vh solid transparent;
+    border-bottom: 3vh solid transparent;
+
+    border-left: 3vh solid coral;
+}
+
+#nextBtn:hover{
+    border-left: 3vh solid rgba(255,127,80,0.5);
+}
+
+#backBtn{
+    width: 0; 
+    height: 0; 
+    border-top: 3vh solid transparent;
+    border-bottom: 3vh solid transparent;
+
+    border-right: 3vh solid coral;
+}
+
+#backBtn:hover{
+    border-right: 3vh solid rgba(255,127,80,0.5);
+}
+
+#toggleRec{
+    width: 4vh; 
+    height: 4vh;
+    border-radius: 0%;
+    background: coral; 
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+#toggleRec:hover{
+    background: rgba(255,127,80,0.5);
+}
+
+@keyframes stopRecording {
+    from{
+        border-radius: 0%;
+    }to{
+        border-radius: 50%;
+    }
+}
